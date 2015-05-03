@@ -13,37 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Labelを作成.
-        let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
+        let button1 = makeButton(100)
+        let button2 = makeButton(200)
+        let button3 = makeButton(300)
         
-        // 背景をオレンジ色にする.
-        myLabel.backgroundColor = UIColor.orangeColor()
-        
-        // 枠を丸くする.
-        myLabel.layer.masksToBounds = true
-        
-        // コーナーの半径.
-        myLabel.layer.cornerRadius = 20.0
-        
-        // Labelに文字を代入.
-        myLabel.text = "Hello Swift!!"
-        
-        // 文字の色を白にする.
-        myLabel.textColor = UIColor.whiteColor()
-        
-        // 文字の影の色をグレーにする.
-        myLabel.shadowColor = UIColor.grayColor()
-        
-        // Textを中央寄せにする.
-        myLabel.textAlignment = NSTextAlignment.Center
-        
-        // 配置する座標を設定する.
-        myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
-        
-        // ViewにLabelを追加.
-        self.view.addSubview(myLabel)
-        
-        
+        self.view.addSubview(button1)
+        self.view.addSubview(button2)
+        self.view.addSubview(button3)
+    }
+
+    func makeButton(y:CGFloat) -> UIButton {
         // Do any additional setup after loading the view, typically from a nib.
         
         let button = UIButton()
@@ -64,7 +43,7 @@ class ViewController: UIViewController {
         button.frame = CGRectMake(0, 0, 300, 50)
         
         //配置場所
-        button.layer.position = CGPoint(x: self.view.frame.width/2, y:100)
+        button.layer.position = CGPoint(x: self.view.frame.width/2, y:y)
         
         //背景色
         button.backgroundColor = UIColor(red: 0.7, green: 0.2, blue: 0.2, alpha: 0.2)
@@ -78,10 +57,10 @@ class ViewController: UIViewController {
         //ボタンをタップした時に実行するメソッドを指定
         //button.addTarget(self, action: "tapped:", forControlEvents:.TouchUpInside)
         
-        //viewにボタンを追加する
-        self.view.addSubview(button)
-    }
+        return button
 
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

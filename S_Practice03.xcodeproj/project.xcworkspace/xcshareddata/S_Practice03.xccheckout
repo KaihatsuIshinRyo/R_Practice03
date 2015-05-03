@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>11D5B02A-73AF-41BB-8004-72A90ACDEB46</string>
 	<key>IDESourceControlProjectName</key>
-	<string>S_Practice03</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>052D688543C0296CA8EF2622E341838C94826FFC</key>
 		<string>https://github.com/KaihatsuIshinRyo/R_Practice03.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>S_Practice03.xcodeproj</string>
+	<string>S_Practice03.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>052D688543C0296CA8EF2622E341838C94826FFC</key>
